@@ -131,6 +131,7 @@ while 1:
     diskFile.write("Light")
     diskFile.write(",")
     diskFile.write(weatherDict["Light"])
+    diskFile.write("\n")
 
     diskFile.close()
 
