@@ -61,10 +61,10 @@ try:
         #read serial to line list with timestamp
 
         serialByte = ser.readline()
-        print(serialByte)
-
         serialString = str(serialByte)  # change it to a string from the serial port byte
 
+        print("String received",serialByte)
+   
         stringLength = len(serialString)
         print("There are",stringLength, "characters in the string")
 
@@ -168,6 +168,11 @@ except KeyboardInterrupt:
     print()
     print()
     print("interrupted! - SHUTTING DOWN")
+    print()
+    print()
+    print()
+    print()
+
     #close everything
     ser.close()
     time.sleep(3)
